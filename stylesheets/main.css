@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    padding: 10px 100px;
+    background-color: #f8ea2b;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ham{
+    display: none;
+}
+
+.header-left ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.header-left ul li{
+    padding-left: 10px;
+    margin-top: 10px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.header-left ul li:first-child{
+    border-right: 1px solid grey;
+    padding-right: 10px;
+}
+
+ul li:last-child{
+    padding-left: 30px;
+}
+
+
+/* main  */
+
+main{
+    background-image: url("../asset/background-image.png");
+    height: 655px;
+    background-color: aqua;
+    opacity: .7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.main-right{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* height: 350px; */
+}
+
+h2{
+    font-size: 2.5rem;
+    color: rgba(105, 105, 107, 255);
+     font-weight: normal;
+}
+
+.main-right p{
+    font-size: 1.5rem;
+    color: rgba(223, 87, 7, 255);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 30rem;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-top: 25px;
+    font-size: 1.5rem
+}
+
+input::placeholder{
+    font-size: 1.3rem;
+}
+
+button{
+    border: none;
+    background: green;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 15px 50px;
+}
+
+.main-left{
+    padding-top: 30px;
+    padding-left: 70px;
+    width: 450px;
+}
+
+.main-left p{
+    font-size: 38px;
+    color: rgba(59, 97, 119, 255);
+    text-align: left;
+    color: blue;
+}
+
+.main-left button{
+    background-color: #f60070;
+    font-size: 18px;
+}
+
+/* footer */
+
+footer{
+    background-color: #4200bb;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.footer-left{
+    width: 50%;
+    margin-right: 70px;
+}
+
+.footer-left img{
+    width: 50px;
+}
+
+.footer-left p{
+    font-size: 42pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: left;
+}
+
+.footer-right{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-right div{
+    width: 30%;
+}
+
+.footer-right p{
+    line-height: 1.6;
+}
+
+.footer-right img{
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.down{
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header-left{
+        display: none;
+    }
+
+    .ham{
+        display: inline;   
+        padding-top: 10px;
+    }
+
+    .ham div{
+        width: 40px;
+        height: 4px;
+        background-color: rgb(247, 36, 36);
+        margin-bottom: 8px;
+    }
+
+    .ham img{
+        display: inline;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        padding-bottom: 70px;
+    }
+
+    .main-left{
+        text-align: center;
+        padding: 50px;
+    }
+
+    .main-left p{
+        text-align: center;
+    }
+
+    .main-right{
+        padding: 0;
+        margin: -5%;
+    }
+
+    h2{
+        margin: 20px 10px;
+        font-size: 2rem;
+    }
+
+    .main-right p{
+        font-size: 1rem;
+    }
+
+    input{
+        width: 20rem;
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+
+    form button{
+        margin: 10px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .footer-left{
+        margin: 20px  auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-left p{
+        font-size: 2rem;
+    }
+
+    .footer-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        width: 100%;
+    }
+
+    .footer-right div{
+        width: 70%;
+        margin: 20px 0;
+    }
+
+    .footer-right div p:first-of-type{
+        text-align: justify;
+    }
+
+    .down{
+        text-align: center;
+    }
+
+    .down img{
+        display: block;
+        margin: 5px auto;
+    }
+}
